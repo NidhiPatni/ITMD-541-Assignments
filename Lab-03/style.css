@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(2px);
+}
+
+#info,
+#headline {
+    text-align: center;
+    padding: 10px;
+}
+#headline {
+    margin-bottom: 10px;
+}
+
+
+
+#tip_calculate {
+    background-color: white;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.form-label {
+    font-size: 1.3rem;
+}
+
+.form-input {
+    border: 2px solid black ;
+    border-radius: 5px;
+}
