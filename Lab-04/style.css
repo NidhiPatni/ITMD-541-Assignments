@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+    margin: 20px; 
+
+    /* Adjust grid layout for smaller screens */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+        margin: 10px; 
+    }
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    color:crimson red;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    color: white;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+#currentLocationButton
+{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchButton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#city {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+
+
+#today, #tomorrow {
+    margin-top: 30px;
+}
+
+#place {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Background image */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.results {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.day-info {
+    width: 45%; /* Adjust the width accordingly */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.location-label {
+    font-size: x-large; 
+}
+footer
+{
+    background-color: #333;
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+/* Updated styles for error message */
+#error {
+    display: none;
+    color: white; /* Change color to white */
+    font-weight: bold;
+    padding: 20px; /* Increase padding for better visibility */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
+/* Add a style for the font awesome icon in error message */
+#error i {
+    margin-right: 5px;
+}
